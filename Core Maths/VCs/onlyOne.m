@@ -18,10 +18,10 @@
         // Initialization code
 
         self.panGestureRecognizer.maximumNumberOfTouches = 2;
-        UIPanGestureRecognizer* y = a.panGestureRecognizer;
-        [y setMinimumNumberOfTouches:1];
-        [y setMaximumNumberOfTouches:2];
-        [self addGestureRecognizer:y];
+//        UIPanGestureRecognizer* y = a.panGestureRecognizer;
+//        [y setMinimumNumberOfTouches:1];
+//        [y setMaximumNumberOfTouches:2];
+//        [self addGestureRecognizer:y];
         
     }
     NSLog(@"check");

@@ -112,7 +112,7 @@
 
 -(void)buildviews{
     CGRect it = [[UIScreen mainScreen] bounds];
-    CGRect xzc = CGRectMake(20, 12, it.size.width-40, 355);
+    CGRect xzc = CGRectMake(0, 0, it.size.width-40, 355);
     UIView *v = [[UIView alloc ] initWithFrame:xzc];
     [v.layer setCornerRadius:10.0f];
     [v.layer setShadowColor:[UIColor blackColor].CGColor];

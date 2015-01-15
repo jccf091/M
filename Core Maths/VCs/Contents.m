@@ -44,7 +44,7 @@
     CGRect it = [[UIScreen mainScreen] bounds];
     shadowIV.frame = CGRectMake(0, 0, it.size.width, 50);
       v7 = [self.view viewWithTag:(7)] ;
-    v7.frame = CGRectMake(0,self.view.frame.size.height,self.view.frame.size.width,self.view.frame.size.height);
+    v7.frame = CGRectMake(0,0, self.view.frame.size.width,self.view.frame.size.height);
     NSLog(@"here??");
     
     

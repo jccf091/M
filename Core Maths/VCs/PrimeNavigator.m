@@ -32,7 +32,7 @@
     v5 = [self.view viewWithTag:(5)];
     v6 = [self.view viewWithTag:(6)];
     v7 = [self.view viewWithTag:(7)];
-    
+    v5.frame = CGRectMake(0, 0, v5.frame.size.width, v5.frame.size.height+20);
     wordtain = [[UIView alloc] initWithFrame:CGRectMake((self.view.frame.size.width-190)/2, self.view.frame.size.height+110,190,100)];
     wordtain.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"ColorX.png"]];
     wordtain.layer.masksToBounds = NO;

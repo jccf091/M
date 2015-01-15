@@ -107,7 +107,7 @@
 {
     
     if([animationID isEqualToString:@"ccat"]){
-        CGRect ax = CGRectMake((self.view.frame.size.width-190)/2, self.view.frame.size.height+50,190,150);
+        CGRect ax = CGRectMake((self.view.frame.size.width-190)/2, self.view.frame.size.height+30,190,150);
 
     UIView* wordtain;
     wordtain = [[UIView alloc] initWithFrame:ax];

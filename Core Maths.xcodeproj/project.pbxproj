@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		28FE4EE71A653BC9004B489B /* AJView.m in Sources */ = {isa = PBXBuildFile; fileRef = 28FE4EE61A653BC9004B489B /* AJView.m */; };
 		5002CA49170337E300AA277F /* NoticiaText-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5002CA48170337E300AA277F /* NoticiaText-Regular.ttf */; };
 		5002CA4C17033D2F00AA277F /* hole.png in Resources */ = {isa = PBXBuildFile; fileRef = 5002CA4A17033D2F00AA277F /* hole.png */; };
 		5002CA4D17033D2F00AA277F /* hole@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5002CA4B17033D2F00AA277F /* hole@2x.png */; };
@@ -201,7 +202,6 @@
 		5031B6CD16844FFA00CEF7D9 /* Contents.m in Sources */ = {isa = PBXBuildFile; fileRef = 5031B6CC16844FFA00CEF7D9 /* Contents.m */; };
 		5031B6D0168463CB00CEF7D9 /* ICONcat.png in Resources */ = {isa = PBXBuildFile; fileRef = 5031B6CE168463CB00CEF7D9 /* ICONcat.png */; };
 		5031B6D1168463CB00CEF7D9 /* ICONcat@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5031B6CF168463CB00CEF7D9 /* ICONcat@2x.png */; };
-		5035228B17A67CD50014C3B1 /* AJView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5035228A17A67CD50014C3B1 /* AJView.m */; };
 		50355201170A6F77002A94C0 /* album.png in Resources */ = {isa = PBXBuildFile; fileRef = 503551FF170A6F77002A94C0 /* album.png */; };
 		50355202170A6F77002A94C0 /* collection.png in Resources */ = {isa = PBXBuildFile; fileRef = 50355200170A6F77002A94C0 /* collection.png */; };
 		50355207170A75AC002A94C0 /* setAB.png in Resources */ = {isa = PBXBuildFile; fileRef = 50355203170A75AB002A94C0 /* setAB.png */; };
@@ -672,6 +672,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		28FE4EE51A653BC9004B489B /* AJView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AJView.h; path = "Core Maths/views/AJView.h"; sourceTree = SOURCE_ROOT; };
+		28FE4EE61A653BC9004B489B /* AJView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AJView.m; path = "Core Maths/views/AJView.m"; sourceTree = SOURCE_ROOT; };
 		5002CA48170337E300AA277F /* NoticiaText-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NoticiaText-Regular.ttf"; sourceTree = "<group>"; };
 		5002CA4A17033D2F00AA277F /* hole.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = hole.png; path = Imaginary/hole.png; sourceTree = SOURCE_ROOT; };
 		5002CA4B17033D2F00AA277F /* hole@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "hole@2x.png"; path = "Imaginary/hole@2x.png"; sourceTree = SOURCE_ROOT; };
@@ -870,8 +872,6 @@
 		5031B6CC16844FFA00CEF7D9 /* Contents.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Contents.m; sourceTree = "<group>"; };
 		5031B6CE168463CB00CEF7D9 /* ICONcat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ICONcat.png; path = Imaginary/ICONcat.png; sourceTree = SOURCE_ROOT; };
 		5031B6CF168463CB00CEF7D9 /* ICONcat@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ICONcat@2x.png"; path = "Imaginary/ICONcat@2x.png"; sourceTree = SOURCE_ROOT; };
-		5035228917A67CD50014C3B1 /* AJView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AJView.h; path = ../../AJView.h; sourceTree = "<group>"; };
-		5035228A17A67CD50014C3B1 /* AJView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AJView.m; path = ../../AJView.m; sourceTree = "<group>"; };
 		503551FF170A6F77002A94C0 /* album.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = album.png; path = Imaginary/album.png; sourceTree = SOURCE_ROOT; };
 		50355200170A6F77002A94C0 /* collection.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = collection.png; path = Imaginary/collection.png; sourceTree = SOURCE_ROOT; };
 		50355203170A75AB002A94C0 /* setAB.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = setAB.png; path = Imaginary/setAB.png; sourceTree = SOURCE_ROOT; };
@@ -1390,13 +1390,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		28FE4EE41A6538B5004B489B /* images */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = images;
-			sourceTree = "<group>";
-		};
 		50039DA6167E0279005F8A07 /* just images */ = {
 			isa = PBXGroup;
 			children = (
@@ -1587,8 +1580,6 @@
 			isa = PBXGroup;
 			children = (
 				50D1750D175A055E00A90DFD /* Viewtro.h */,
-				5035228917A67CD50014C3B1 /* AJView.h */,
-				5035228A17A67CD50014C3B1 /* AJView.m */,
 				50D1750E175A055E00A90DFD /* Viewtro.m */,
 				500F559916D762F9000367E5 /* Rects.h */,
 				500F559A16D762F9000367E5 /* Rects.m */,
@@ -1600,9 +1591,6 @@
 				50ACE63F16D8E9FB00B9A55A /* RectsG3.m */,
 				502E133C16DB7FEE003E3380 /* SV.h */,
 				502E133D16DB7FEE003E3380 /* SV.m */,
-				50EDB507172FC6CA005422D3 /* Nmulti3X.png */,
-				50EDB508172FC6CA005422D3 /* Ndi4.png */,
-				50EDB509172FC6CA005422D3 /* Ndi6.png */,
 				50E8127516DF6E95007B904F /* XC.h */,
 				50E8127616DF6E95007B904F /* XC.m */,
 				50F94B3C16EF5FA600090A12 /* bol.h */,
@@ -1665,6 +1653,9 @@
 		507604F1171A8A9C00C0707E /* IMGS */ = {
 			isa = PBXGroup;
 			children = (
+				50EDB507172FC6CA005422D3 /* Nmulti3X.png */,
+				50EDB508172FC6CA005422D3 /* Ndi4.png */,
+				50EDB509172FC6CA005422D3 /* Ndi6.png */,
 				50704977178F0F0E007F5160 /* techdown@2x.png */,
 				50704978178F0F0E007F5160 /* selection30@2x copy.png */,
 				50704979178F0F0F007F5160 /* techdown.png */,
@@ -2059,7 +2050,6 @@
 		789DFDC2164016DB00809DD8 = {
 			isa = PBXGroup;
 			children = (
-				28FE4EE41A6538B5004B489B /* images */,
 				507604F1171A8A9C00C0707E /* IMGS */,
 				5054730F16EDD8FD00450355 /* Knowledge */,
 				78A6C5A616414A5300A2615A /* Core Maths */,
@@ -2160,6 +2150,8 @@
 				78A6C5CC16414A5300A2615A /* StartUp.h */,
 				78B8AFF51653D60400F08C5F /* ButtonBased.h */,
 				78B8AFF61653D60400F08C5F /* ButtonBased.m */,
+				28FE4EE51A653BC9004B489B /* AJView.h */,
+				28FE4EE61A653BC9004B489B /* AJView.m */,
 				789B4DDC16525AEB00045DB0 /* UserInit.h */,
 				789B4DDD16525AEC00045DB0 /* UserInit.m */,
 				78A6C5CD16414A5300A2615A /* StartUp.m */,
@@ -2915,6 +2907,7 @@
 				7895C02C164748400028C3F2 /* pushup.m in Sources */,
 				789B4DDE16525AEC00045DB0 /* UserInit.m in Sources */,
 				78B8AFF71653D60400F08C5F /* ButtonBased.m in Sources */,
+				28FE4EE71A653BC9004B489B /* AJView.m in Sources */,
 				50E2C9A616802ACA00DBCCC2 /* Colored.m in Sources */,
 				50D9B47916831CC000649B6C /* SearchIn.m in Sources */,
 				5031B6CA16844D0A00CEF7D9 /* Darked.m in Sources */,
@@ -2934,7 +2927,6 @@
 				50ECA2F116FDCBB2004493C3 /* show.m in Sources */,
 				50A55D3F1705D15D001FAD0D /* Search.m in Sources */,
 				50A55D421705D16A001FAD0D /* About.m in Sources */,
-				5035228B17A67CD50014C3B1 /* AJView.m in Sources */,
 				50A55D451705D17A001FAD0D /* Fav.m in Sources */,
 				50A55D481705D1CF001FAD0D /* Xtra.m in Sources */,
 				50C6533D17075A7000ADD499 /* MSLabel.m in Sources */,

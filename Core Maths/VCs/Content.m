@@ -27,12 +27,12 @@
     v7 = [[UIView alloc ] initWithFrame:xzc];
     v8 = [[UIView alloc ] initWithFrame:xzc];
     v9 = [[UIView alloc ] initWithFrame:xzc];
-    v10 = [[UIView alloc ] initWithFrame:xzc];
+//    v10 = [[UIView alloc ] initWithFrame:xzc];
     [self.view addSubview:v6];
     [self.view addSubview:v7];
     [self.view addSubview:v8];
     [self.view addSubview:v9];
-    [self.view addSubview:v10];
+//    [self.view addSubview:v10];
 
 }
 
@@ -144,7 +144,8 @@
     [v9 addSubview:v5];
     v5.clipsToBounds= YES;
     [v5 addSubview:vx];
-    [v5 addSubview:vb];
+    //somehow adding vb's Pangesture cannot be used to scroll vx
+    //[v5 addSubview:vb];
     
 //TO COMPILER: THIS SHALL NOT BE SEEN!!!
 //(the blindspot yet to be seen)

@@ -17,19 +17,17 @@
     if (self) {
         // Initialization code
 
-        self.panGestureRecognizer.maximumNumberOfTouches = 1;
+        self.panGestureRecognizer.maximumNumberOfTouches = 2;
         UIPanGestureRecognizer* y = a.panGestureRecognizer;
-        NSLog(@"check");
-        y.minimumNumberOfTouches = 2;
-        y.maximumNumberOfTouches = 2;
-        NSLog(@"check");
+        [y setMinimumNumberOfTouches:1];
+        [y setMaximumNumberOfTouches:2];
         [self addGestureRecognizer:y];
+        
     }
     NSLog(@"check");
     self.delegate = self;
     return self;
 }
-
 
 -(void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate{
     if( decelerate==YES){
@@ -76,14 +74,5 @@
 }
 
 
-
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect
-{
-    // Drawing code
-}
-*/
 
 @end
